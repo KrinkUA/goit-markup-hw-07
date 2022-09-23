@@ -73,7 +73,7 @@ img {
 }
 
 .link,
-.logo-header,
+.logo__header,
 .logo-footer {
   text-decoration: none;
   color: currentColor;
@@ -101,11 +101,13 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
 }
 
-.logo-header {
+/* Logo */
+
+.logo__header {
   display: flex;
 
   padding-top: 24px;
@@ -114,19 +116,25 @@ address {
   padding-bottom: 25px;
 }
 
-.main-nav {
+.logo__special {
+  color: var(--accent-txt-color);
+}
+
+/* Main navigation */
+
+.nav {
   margin-right: auto;
 }
 
-.list-nav,
-.list-address-nav {
+.nav__list,
+.nav__list-address {
   display: flex;
   gap: 50px;
   align-items: center;
 }
 
-.link-nav,
-.menu-link {
+.nav__link,
+.nav__special-link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -136,11 +144,11 @@ address {
   transition: color var(--anim-main);
 }
 
-.menu-link {
+.nav__special-link {
   color: var(--accent-txt-color);
 }
 
-.menu-link::after {
+.nav__special-link::after {
   content: '';
 
   position: absolute;
@@ -163,16 +171,16 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
 }
-
+/* 
 .icon {
   color: var(--grey-txt-color);
-}
+} */
 
 .icon:hover {
   color: var(--accent-txt-color);
 }
 
-.nav-icon {
+.nav__icon {
   margin-right: 10px;
 
   fill: currentColor;
@@ -185,7 +193,7 @@ address {
   color: var(--accent-txt-color);
 }
 
-.logo-header,
+.logo__header,
 .logo-footer {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -195,9 +203,7 @@ address {
   color: var(--dark-text-color);
 }
 
-.special {
-  color: var(--accent-txt-color);
-}
+
 
 .list-address {
   color: var(--grey-txt-color);
